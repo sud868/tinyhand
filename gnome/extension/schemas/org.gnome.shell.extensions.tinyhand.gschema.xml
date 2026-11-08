@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.tinyhand" path="/org/gnome/shell/extensions/tinyhand/">
+    <key name="toggle-pointer" type="as">
+      <default><![CDATA[['<Control><Alt>h']]]></default>
+      <summary>Turn the pointer on or off</summary>
+    </key>
+    <key name="clear-ink" type="as">
+      <default><![CDATA[['<Control><Alt>x']]]></default>
+      <summary>Clear the drawing</summary>
+    </key>
+    <key name="exit-pointer" type="as">
+      <default><![CDATA[['Escape']]]></default>
+      <summary>Clear everything and turn the pointer off (only bound while the pointer is on)</summary>
+    </key>
+    <key name="hand-style" type="s">
+      <default>'lavender'</default>
+      <summary>Hand style, the name of an assets/hand_*.png file without prefix</summary>
+    </key>
+    <key name="pointer-size" type="d">
+      <range min="0.06" max="0.3"/>
+      <default>0.13</default>
+      <summary>Hand length as a fraction of the screen height</summary>
+    </key>
+    <key name="tap-sound" type="s">
+      <choices>
+        <choice value="thock"/><choice value="click"/><choice value="pop"/>
+        <choice value="wood"/><choice value="boop"/><choice value="squeak"/><choice value="off"/>
+      </choices>
+      <default>'thock'</default>
+      <summary>Sound played on each tap</summary>
+    </key>
+    <key name="fade-seconds" type="d">
+      <range min="0" max="60"/>
+      <default>3</default>
+      <summary>Seconds before a drawing fades; 0 keeps it</summary>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,8 @@
+{
+  "uuid": "tinyhand@tinyhand.app",
+  "name": "TinyHand",
+  "description": "A tiny hand on a stick that points at things on your screen. Click to tap, drag to draw.",
+  "url": "https://github.com/nilbuild/tinyhand",
+  "settings-schema": "org.gnome.shell.extensions.tinyhand",
+  "shell-version": ["51"]
+}
